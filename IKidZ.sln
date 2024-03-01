@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IKidZ", "IKidZ\IKidZ.csproj", "{38130F98-281C-4BE9-8C94-8CF339AF60C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38130F98-281C-4BE9-8C94-8CF339AF60C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38130F98-281C-4BE9-8C94-8CF339AF60C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38130F98-281C-4BE9-8C94-8CF339AF60C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38130F98-281C-4BE9-8C94-8CF339AF60C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B7577DE-005D-4601-9E95-2C87993B6C9E}
+	EndGlobalSection
+EndGlobal

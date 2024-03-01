@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{38130F98-281C-4BE9-8C94-8CF339AF60C8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IKidZ</RootNamespace>
+    <AssemblyName>IKidZ</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CountForm.Designer.cs">
+      <DependentUpon>CountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalReference.cs" />
+    <Compile Include="Letter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Letter.Designer.cs">
+      <DependentUpon>Letter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Math.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Math.Designer.cs">
+      <DependentUpon>Math.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quiz.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Quiz.Designer.cs">
+      <DependentUpon>Quiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadForm.Designer.cs">
+      <DependentUpon>ReadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenCapture.cs" />
+    <EmbeddedResource Include="CountForm.resx">
+      <DependentUpon>CountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letter.resx">
+      <DependentUpon>Letter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Math.resx">
+      <DependentUpon>Math.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz.resx">
+      <DependentUpon>Quiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadForm.resx">
+      <DependentUpon>ReadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-from-rawpixel-id-2629788-jpeggg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eb64aa70fdb8e2b681b01b1ada8b91c1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\020-B2S-Blog_2-Families-SL-v2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apple-6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Camera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon-6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dove.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\House8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guitar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cuteeyes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1230682.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Table.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ribbon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unicorn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Watermelon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Parrot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Truck.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Owl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Queen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vase.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xylophone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zebra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yacht.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Speaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leftt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rightt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\+.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\div.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
